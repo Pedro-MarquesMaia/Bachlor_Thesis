@@ -280,7 +280,7 @@ def shift_cluster(cluster,shift,scale):
 
 def create_universe(scale):
     cluster1 = create_cluster(14, "red", 2*(10**27), -5, 200, 0, scale)
-    cluster2 = create_cluster(14, "blue", 2*(10**27), 5, 300, 12, scale)
+    cluster2 = create_cluster(14, "blue", 2*(10**27), 5, 300, 14, scale)
     cluster1 = shift_cluster(cluster1,8*10**(12),scale)
     cluster2 = shift_cluster(cluster2,-8*10**(12),scale)
     return cluster1 + cluster2
